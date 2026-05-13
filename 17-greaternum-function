@@ -10,4 +10,8 @@ BEGIN
 END;
 /
 
-SELECT Greater_Num(2,3) AS Greater FROM DUAL;
+
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(GreaterNum(10,20));
+END;
+/
