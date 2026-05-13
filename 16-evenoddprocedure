@@ -1,0 +1,19 @@
+CREATE OR REPLACE PROCEDURE EvenOdd(num NUMBER)
+IS
+BEGIN
+    IF MOD(num,2)=0 THEN
+        DBMS_OUTPUT.PUT_LINE('Even');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Odd');
+    END IF;
+END;
+/
+
+BEGIN
+    EvenOdd(5);
+END;
+/
+
+
+SET SERVEROUTPUT ON;
+EXEC Check_EvenOdd(5);
