@@ -1,0 +1,13 @@
+CREATE OR REPLACE FUNCTION Greater_Num (a NUMBER, b NUMBER)
+RETURN NUMBER
+IS
+BEGIN
+    IF a > b THEN
+        RETURN a;
+    ELSE
+        RETURN b;
+    END IF;
+END;
+/
+
+SELECT Greater_Num(2,3) AS Greater FROM DUAL;
