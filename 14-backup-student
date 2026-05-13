@@ -1,0 +1,26 @@
+create database collegeDB;
+use collegeDB;
+
+create table Student (
+    SID number pk,
+    Name varchar(20)
+);
+
+insert into Student values (1, 'abc');
+insert into Student values (2, 'def');
+insert into Student values (3, 'ghi');
+
+
+
+//cmd
+mysqldump -u root -p collegeDB > collegeDB_backup.sql
+
+-------------------------------------------------------------------------
+drop table Student;
+
+
+//cmd
+mysql -u root -p collegeDB < collegeDB_backup.sql
+
+
+select * from Student;
