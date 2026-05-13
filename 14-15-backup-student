@@ -15,7 +15,7 @@ insert into Student values (3, 'ghi');
 //cmd
 mysqldump -u root -p collegeDB > collegeDB_backup.sql
 
--------------------------------------------------------------------------
+--------------------------15-----------------------------------------------
 drop table Student;
 
 
